@@ -1,0 +1,22 @@
+CREATE TABLE reminders (
+    id SERIAL PRIMARY KEY,
+    message TEXT NOT NULL,
+    sender_name TEXT NOT NULL,
+    remind_at TIMESTAMP NOT NULL
+);
+
+-- Get by sender name
+SELECT * FROM reminders
+WHERE sender_name LIKE '%Sender_Name%'; 
+
+-- Get by specific date
+SELECT * FROM reminders
+WHERE remind_at::date = '2025-04-25';   --  Date format should be 'YYYY-MM-DD' without quotes around column
+
+-- Get by sender AND date
+SELECT * FROM reminders
+WHERE sender_name LIKE '%Sender_Name%'
+  AND remind_at::date = '2025-04-25';  
+
+-- Get everything
+SELECT * FROM reminders;
