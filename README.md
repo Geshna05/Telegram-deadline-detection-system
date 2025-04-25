@@ -2,7 +2,7 @@
 An intelligent system that detects deadlines from chat messages using NLP and sends real-time reminders.
 
 ## 🚀 Features
-- Ensures users never miss any deadline
+- Ensures users never miss any deadlines or reminders from direct messages or groups\channels on telegram
 - Extracts deadlines from  both direct messages and group/channel conversations using Hugging Face's **Facebook BART-based 
   NLP model**
 - Automatically sets reminders and adds events to **Google Calendar** and sends mail notifications 
@@ -21,7 +21,7 @@ An intelligent system that detects deadlines from chat messages using NLP and se
 ## 📚 What I Learned
 - Applied Natural Language Processing (NLP) to extract actionable deadlines from real-time chat data using Hugging Face transformer models
 
-- Integrated third-party APIs and webhooks to automate calendar event creation and send real-time reminders via Slack and Telegram
+- Integrated third-party APIs and webhooks to automate calendar event creation and send real-time reminders via Telegram
 
 - Designed and implemented core backend logic, including data parsing, storage using PostgreSQL, and event handling
 
